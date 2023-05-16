@@ -64,16 +64,19 @@ public class num_1260 {
 		br.close();
 	}
 	public static void bfs(Integer v) {
-		if(v == null) return;
 		visit[v] = true;
+		bfs_que.add(v);
 		System.out.print(v + " ");
-		for(int n=1; n<graph[v].length;n++) {
-			if(graph[v][n] == 1 && !visit[n]) {
-				visit[n] = true;
-				bfs_que.add(n);
+		while(!bfs_que.isEmpty()) {
+			int point = bfs_que.poll();
+			for(int n=1; n<graph[point].length;n++) {
+				if(graph[point][n] == 1 && !visit[n]) {
+					visit[n] = true;
+					bfs_que.add(n);
+					System.out.print(n + " ");
+				}
 			}
 		}
-		bfs(bfs_que.poll());
 	}
 	public static void dfs(int v) {
 		visit[v] = true;
