@@ -36,8 +36,8 @@ public class num_1929 {
 		int[] arr_Sosu = new int[1000001];
 		
 		Arrays.fill(arr_Sosu, 1);
-		for(int i=2; i<1001;i++) {
-			for(int j=1; j*i<1001;j++) {
+		for(int i=2; i<arr_Sosu.length;i++) {
+			for(int j=1; j*i<arr_Sosu.length;j++) {
 				arr_Sosu[i*j]+=1;
 			}
 		}
