@@ -53,7 +53,7 @@ public class num_15649 {
 		M = Integer.parseInt(st.nextToken());
 		arr_bool = new boolean[N];
 		String rtn_s = "";
-		
+		 
 		back_dfs(rtn_s);
 		System.out.println(sb);
 		br.close();
