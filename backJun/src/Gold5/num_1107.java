@@ -47,7 +47,7 @@ public class num_1107 {
 		
 		
 		String up_N = N;
-		while(up_N.matches(".*[ ," + Arrays.toString(broken_button).substring(1, Arrays.toString(broken_button).length()-1) + "].*") && Integer.parseInt(up_N) <= 1000000) {
+		while(up_N.matches(".*[ ," + Arrays.toString(broken_button).substring(1, Arrays.toString(broken_button).length()-1) + "].*") && Integer.parseInt(up_N) <= 500000+Integer.parseInt(N)) {
 			up_N = String.valueOf(Integer.parseInt(up_N) + 1);
 		}
 		
